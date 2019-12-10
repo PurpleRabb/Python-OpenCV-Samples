@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('../buildings.jpg')
+img = cv2.imread('../images/buildings.jpg')
 px = img[100, 100]  # B G R
 print(px)
 

@@ -9,8 +9,8 @@ print(cv2.add(x, y))
 print(x + y)
 
 # Image Blending
-img1 = cv2.imread('opencv-logo2.png')
-img2 = cv2.imread('../buildings.jpg')
+img1 = cv2.imread('../images/opencv-logo2.png')
+img2 = cv2.imread('../images/buildings.jpg')
 
 img1 = cv2.resize(img1, (200, 200))
 img2 = cv2.resize(img2, (200, 200))
@@ -21,8 +21,8 @@ dst = cv2.addWeighted(img1, 0.1, img2, 0.9, 0)
 
 
 # Bitwise Operations
-img1 = cv2.imread('../buildings.jpg')
-img2 = cv2.imread('opencv-logo2.png')
+img1 = cv2.imread('../images/buildings.jpg')
+img2 = cv2.imread('../images/opencv-logo2.png')
 img2 = cv2.resize(img2, (100, 100))
 rows, cols, channels = img2.shape
 roi = img1[0:rows, 0:cols]
